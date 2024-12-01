@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us Us</title>
+ <link rel="stylesheet" href="/about.css"> 
+</head>
+<body>
+<header>
+        <nav>
+            <ul>
+                <li><a href="/login">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/register">Register Here</a></li>
+                <li><a href="/flights">Flights</a></li>
+                <li><a href="/booking">Booking</a></li>
+                <li><a href="/payment">Payment</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   <form action="/about" method="post" th:object="${about}">
+
+    <section id="about-us">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Welcome to our Airline Reservation System.</p>
+
+
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide a secure,efficient, and reliable online platform for booking flights. </p>
+            
+            <h2>Our Vision</h2>
+            <p>Our vision is to become the leading online reservation system, recognized for our customer satisfaction</p>
+
+            <h2>Our Technology</h2>
+            <p>Our Airline Reservation System is built using the latest technologies,including</p>
+            <ul><li>HTML</li>
+            <li>CSS</li>
+            <li>MySQL</li>
+            <li>Java</li>
+            <li>Springboot</li>
+            
+            </ul>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>User Friendly Interface</li>
+                <li>Reliable</li>
+                <li>Personalize Customer Experience</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Airline Resesrvation System. All rights reserved.</p>
+    </footer>  
+</body>
+</html>
